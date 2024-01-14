@@ -11,7 +11,7 @@
 
 <nav class="navbar">
     <div class="brand-title">Your Brand</div>
-    <a href="#" class="toggle-button" onclick="toggleMenu()">
+    <a href="javascript:void(0);" class="toggle-button" onclick="toggleMenu()">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
@@ -36,5 +36,13 @@
     <a href="#terms">Terms of Service</a>
 </footer>
 
+<script>
+function toggleMenu() {
+    var navbarLinks = document.getElementsByClassName('navbar-links')[0];
+    navbarLinks.classList.toggle('active');
+}
+</script>
+
 </body>
 </html>
+
