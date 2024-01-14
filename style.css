@@ -44,7 +44,7 @@ body {
 }
 
 /* Hamburger button styles */
-toggle-button {
+.toggle-button {
     display: none; /* Hidden by default */
     cursor: pointer;
     position: absolute;
