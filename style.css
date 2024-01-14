@@ -63,20 +63,22 @@ toggle-button {
 
 /* Responsive styles */
 @media (max-width: 600px) {
-    .navbar-links {
-        position: absolute; /* Positioned relative to the navbar */
-        background-color: #333; /* Same as navbar for consistency */
-        top: 56px; /* Adjust this value based on your navbar's height */
-        left: 0;
-        right: 0; /* Ensures full width */
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        display: none; /* Hidden by default, shown when .active is added */
+    .navbar {
+        position: relative; /* Ensure navbar is positioned to contain absolute children */
     }
 
-    .navbar-links.active {
-        display: flex; /* Displays the flex container */
+    .navbar-links {
+        position: absolute;
+        top: 56px; /* Adjust based on your navbar height */
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #333; /* Same as navbar for consistency */
+        transition: all 0.3s ease; /* Smooth transition for the dropdown */
+        width: 100%; /* Full width */
+        z-index: 999; /* Ensure it stacks on top of other content */
     }
 
     .navbar-links ul {
@@ -85,16 +87,21 @@ toggle-button {
     }
 
     .navbar-links li {
-        display: block; /* Stack the menu items vertically */
-        text-align: center; /* Centers the text */
-        width: 100%; /* Full width menu items */
-        padding: 10px; /* Add some padding for touch targets */
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 15px 0; /* More padding for tap targets */
     }
 
     .toggle-button {
-        display: block; /* Shown on narrow screens */
+        display: block;
+    }
+
+    .navbar-links.active {
+        display: flex;
     }
 }
+
 
 /* Content styles */
 .content {
