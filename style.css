@@ -82,6 +82,13 @@ img {
     /* other styles */
 }
 
+.legal-text {
+    margin: 20px 0; /* Add some vertical spacing around the legal text */
+    padding: 10px; /* Add some padding inside the legal text sections */
+    background-color: #f7f7f7; /* A light background color for contrast (optional) */
+    border-left: 4px solid #333; /* A left border for styling (optional) */
+}
+
 #home {
     padding-top: 0; /* Remove padding at the top of the home section if needed */
     display: block;
