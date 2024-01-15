@@ -6,7 +6,16 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
 }
 
 /* Navbar styles */
@@ -43,6 +52,62 @@ body {
     color: #0088a9;
 }
 
+/*H1 and H2 styles */
+h1 {
+font-size: 2.5em; 
+margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 2em; /* 32px if the base font size is 16px */
+    margin-bottom: 0.75em;
+ }
+    
+    /* Text content styles */
+p {
+    font-size: 1em; 
+    margin-bottom: 1em; 
+}
+    
+    /* Image styles */
+img {
+    max-width: 100%;
+    height: auto; 
+    margin-bottom: 1em; 
+}
+    
+    /* Contact form styles */
+form {
+    max-width: 600px; 
+    margin: 2em auto;
+}
+    
+form label {
+    display: block; /* Make labels block-level for easy styling */
+    margin-bottom: 0.5em;
+}
+    
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%; 
+    padding: 0.5em;
+    margin-bottom: 1em; 
+    border: 1px solid #ccc;
+}
+    
+form button {
+    padding: 0.5em 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+    
+form button:hover {
+    background-color: #555; /* Slightly darker on hover */
+}
+
 /* Hamburger button styles */
 .toggle-button {
     display: none; /* Hidden by default */
@@ -65,6 +130,7 @@ body {
 @media (max-width: 600px) {
     .navbar {
         position: relative; /* Ensure navbar is positioned to contain absolute children */
+        padding: 10px; /* Less padding on small screens */
     }
 
     .navbar-links {
@@ -100,6 +166,20 @@ body {
     .navbar-links.active {
         display: flex;
     }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    /* Adjust form input and button sizes for easier interaction on touch devices */
+    form input[type="text"],
+    form input[type="email"],
+    form textarea,
+    form button {
+    padding: 1em; /* Increase padding to create larger tap targets */
+}
+
 }
 
 
