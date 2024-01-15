@@ -89,6 +89,17 @@ img {
     border-left: 4px solid #333; /* A left border for styling (optional) */
 }
 
+.legal-text ul {
+    list-style-position: outside; /* Position the bullet outside the padding area */
+    padding-left: 20px; /* Adjust this value as needed for your design */
+}
+
+.legal-text li {
+    margin-bottom: 10px; /* Adds some space between list items */
+    text-indent: -20px; /* Adjusts text alignment if needed */
+    line-height: 1.6; /* Adjusts the line height for better readability */
+}
+
 #home {
     padding-top: 0; /* Remove padding at the top of the home section if needed */
     display: block;
