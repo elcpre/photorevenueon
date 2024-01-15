@@ -92,6 +92,7 @@ img {
 .legal-text ul {
     list-style-position: outside; /* Position the bullet outside the padding area */
     padding-left: 20px; /* Adjust this value as needed for your design */
+    list-style-type: none;
 }
 
 .legal-text li {
