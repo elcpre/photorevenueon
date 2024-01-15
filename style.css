@@ -84,7 +84,8 @@ img {
 
 #home {
     padding-top: 0; /* Remove padding at the top of the home section if needed */
-    display: flex;
+    display: block;
+    width: 100%;
 }
 
 .banner-image {
