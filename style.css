@@ -135,7 +135,7 @@ form button:hover {
 
     .navbar-links {
         position: absolute;
-        top: 100px; /* Adjust based on your navbar height */
+        top: 80px; /* Adjust based on your navbar height */
         left: 0;
         right: 0;
         display: none;
