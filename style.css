@@ -56,17 +56,20 @@ main {
 h1 {
 font-size: 2.5em; 
 margin-bottom: 0.5em;
+text-align: center;
 }
 
 h2 {
     font-size: 2em; /* 32px if the base font size is 16px */
     margin-bottom: 0.75em;
+    text-align: center;
  }
     
     /* Text content styles */
 p {
     font-size: 1em; 
     margin-bottom: 1em; 
+    text-align: center;
 }
     
     /* Image styles */
@@ -74,12 +77,18 @@ img {
     max-width: 100%;
     height: auto; 
     margin-bottom: 1em; 
+    display: block; /* Images are inline by default, so set them to block to enable margin auto */
+    margin: 0 auto; /* This will center the image in the container */
+    /* other styles */
 }
     
     /* Contact form styles */
 form {
     max-width: 600px; 
     margin: 2em auto;
+    display: block; /* Ensure the form is a block-level element */
+    margin: 0 auto; /* Center the form in the container */
+    /* other styles */
 }
     
 form label {
