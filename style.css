@@ -11,6 +11,7 @@ body {
     color: #333;
     padding: 0;
     margin: 0;
+    padding-bottom: 100px; /* Adjust this value so it's equal to or greater than the height of your footer */
 }
 
 /* Main content styles */
